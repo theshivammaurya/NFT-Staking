@@ -1,0 +1,253 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xEBb731E60F8C7F7cc0935ba882b4e3f6cB36045b",
+      "txHash": "0x1ebf01849b08a91e9f6d5c38ce17e1a90acbcc9488262d1b5d185e0a3e85e788",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "527ffb0145f61e224e6551887809a2aad5fa3056aed53b37b28a9315e8039999": {
+      "address": "0xEb75C23205198cc8436f31960861Baf1D43BB5Df",
+      "txHash": "0x6e2f348c70bed10b5bbc80e101c7d6353c3363b442b85da43df08dbad8284215",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "contracts/RewardNFTStaking.sol:1396"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "contracts/RewardNFTStaking.sol:1483"
+          },
+          {
+            "label": "stakingToken",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_contract(IERC20Upgradeable)3827",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2212"
+          },
+          {
+            "label": "rewardPerBlock",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_uint256",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2214"
+          },
+          {
+            "label": "poolDetails",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_struct(PoolDetails)6202_storage",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2216"
+          },
+          {
+            "label": "stakers",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_mapping(t_address,t_struct(StakerInfo)6195_storage)",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2218"
+          },
+          {
+            "label": "totalAllocPoints",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_uint256",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2220"
+          },
+          {
+            "label": "startBlock",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_uint256",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2222"
+          },
+          {
+            "label": "endBlock",
+            "offset": 0,
+            "slot": "58",
+            "type": "t_uint256",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2224"
+          },
+          {
+            "label": "claimInterval",
+            "offset": 0,
+            "slot": "59",
+            "type": "t_uint256",
+            "contract": "RewardNFTStaking",
+            "src": "contracts/RewardNFTStaking.sol:2226"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)1846_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)1943_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20Upgradeable)3827": {
+            "label": "contract IERC20Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(StakerInfo)6195_storage)": {
+            "label": "mapping(address => struct RewardNFTStaking.StakerInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PoolDetails)6202_storage": {
+            "label": "struct RewardNFTStaking.PoolDetails",
+            "members": [
+              {
+                "label": "allocationPoints",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "lastBlockReward",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "accumulatedRewardPerShare",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(StakerInfo)6195_storage": {
+            "label": "struct RewardNFTStaking.StakerInfo",
+            "members": [
+              {
+                "label": "stakedNFTIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "nftContracts",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "pendingRewards",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "lastRewardClaim",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "contracts/RewardNFTStaking.sol:1078",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "contracts/RewardNFTStaking.sol:856",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "contracts/RewardNFTStaking.sol:860",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
